@@ -1,0 +1,21 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ZBSCOMM - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/ZBSCOMM.res" /d "NDEBUG" /d "_AFXDLL" "F:\saber\2 project\36 上位机\ZB\ZBSCOMM 04 V1.1 CH 准备改下拉 - 副本\ZBSCOMM.rc"" 
+Creating command line "link.exe /nologo /subsystem:windows /incremental:no /pdb:"Release/ZBSCOMM.pdb" /machine:I386 /out:"Release/ZBSCOMM.exe"  ".\Release\mscomm1.obj" ".\Release\StdAfx.obj" ".\Release\ZBSCOMM.obj" ".\Release\ZBSCOMMDlg.obj" ".\Release\ZBSCOMM.res" "
+<h3>Output Window</h3>
+Compiling resources...
+Linking...
+
+
+
+<h3>Results</h3>
+ZBSCOMM.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

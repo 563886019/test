@@ -1,0 +1,357 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\ZBSCOMM.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\ZBSCOMM.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 ZBSCOMM"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "ZBSCOMM 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2014",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_ZBSCOMM_DIALOG DIALOGEX 0, 0, 386, 325
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "ZBSCOMM V1.0       微雪电子       www.waveshare.net"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "",IDC_MSCOMM1,"{648A5600-2C6E-101B-82B6-000000000014}",
+                    WS_TABSTOP,326,224,25,25
+    EDITTEXT        IDC_EDIT_RXDATA,93,21,286,93,ES_MULTILINE | WS_VSCROLL
+    EDITTEXT        IDC_EDIT_TXDATA,93,127,286,20,ES_MULTILINE | WS_VSCROLL
+    LTEXT           "接收窗口",IDC_STATIC,95,8,33,8
+    LTEXT           "发送窗口",IDC_STATIC,93,117,33,8
+    PUSHBUTTON      "发送",IDC_BUTTON_MANUALSEND,313,180,58,22
+    PUSHBUTTON      "读所有信息",IDC_BUTTON_GETCFG,11,259,58,22
+    PUSHBUTTON      "清空接收",IDC_BUTTON_CLEAR,313,155,58,22
+    LTEXT           "串口号",IDC_STATIC,14,25,25,8
+    LTEXT           "波特率",IDC_STATIC,14,42,25,8
+    LTEXT           "数据位",IDC_STATIC,14,62,25,8
+    LTEXT           "停止位",IDC_STATIC,14,82,25,8
+    PUSHBUTTON      "打开串口",IDC_BUTTON_OPEN,24,102,50,14
+    PUSHBUTTON      "关闭串口",IDC_BUTTON_CLOSE,24,125,50,14
+    COMBOBOX        IDC_COMBO_COMPORT,42,22,42,175,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO_COMPORT2,42,41,42,113,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_COMPORT3,42,60,42,60,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO_COMPORT4,42,79,42,58,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "读通信信道",IDC_BUTTON_GETCHN,85,259,58,22
+    PUSHBUTTON      "读自身短地址",IDC_BUTTON_GETADDR,159,259,58,22
+    PUSHBUTTON      "读自身IEEE地址",IDC_BUTTON_GETIEEE,233,259,62,22
+    PUSHBUTTON      "读串口信息",IDC_BUTTON_GETUART,11,291,58,22
+    PUSHBUTTON      "读自身PANID",IDC_BUTTON_GETPANID,85,291,58,22
+    PUSHBUTTON      "读父辈短地址",IDC_BUTTON_GETFADDR,159,291,58,22
+    PUSHBUTTON      "读父辈IEEE地址",IDC_BUTTON_GETFIEEE,233,291,58,22
+    GROUPBOX        "读取设备指令",IDC_STATIC,7,246,297,72
+    PUSHBUTTON      "原厂设置",IDC_BUTTON_RESET,313,296,58,22
+    PUSHBUTTON      "重启",IDC_BUTTON_RESTART,313,272,58,22
+    LTEXT           "串口通道",IDC_STATIC,15,167,33,8
+    LTEXT           "波特率",IDC_STATIC,15,185,25,8
+    LTEXT           "流控制",IDC_STATIC,15,201,25,8
+    LTEXT           "信道",IDC_STATIC,123,166,17,8
+    LTEXT           "PANID",IDC_STATIC,209,165,21,8
+    LTEXT           "取值范围0X0000-0X3FFE",IDC_STATIC,203,191,85,8
+    PUSHBUTTON      "设置串口",IDC_BUTTON_SETPORTCOM,24,219,58,22
+    PUSHBUTTON      "设置信道",IDC_BUTTON_SETCHANNEL,134,219,58,22
+    PUSHBUTTON      "设置PANID",IDC_BUTTON_SETPANID,220,219,58,22
+    COMBOBOX        IDC_COMBO_COMPORTSET,53,163,42,175,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_COMBAUDSET,53,183,42,175,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_COMCTRL,53,203,42,175,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_COMCHANNEL,147,163,42,175,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "配置指令",IDC_STATIC,7,151,297,91
+    EDITTEXT        IDC_EDIT_GET_PANID,237,163,44,15,ES_AUTOHSCROLL
+    GROUPBOX        "串口控制",IDC_STATIC,7,7,84,140
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "ZBSCOMM Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "ZBSCOMM\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2014\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "ZBSCOMM.EXE\0"
+            VALUE "ProductName", "ZBSCOMM 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_ZBSCOMM_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 379
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 318
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_ZBSCOMM_DIALOG DLGINIT
+BEGIN
+    IDC_MSCOMM1, 0x376, 102, 0
+0x0013, 0x0000, 0x0043, 0x006f, 0x0070, 0x0079, 0x0072, 0x0069, 0x0067, 
+0x0068, 0x0074, 0x0020, 0x0028, 0x0063, 0x0029, 0x0020, 0x0031, 0x0039, 
+0x0039, 0x0034, 0x0020, 0x4321, 0x1234, 0x0008, 0x0000, 0x03ed, 0x0000, 
+0x03ed, 0x0000, 0x5601, 0x648a, 0x0000, 0x0006, 0x0000, 0x0001, 0x0400, 
+0x0000, 0x0200, 0x0000, 0x2580, 0x0000, 0x0000, 0x0008, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x003f, 0x0000, 0x0001, 0x0000, 
+    IDC_COMBO_COMPORT, 0x403, 5, 0
+0x4f43, 0x314d, "\000" 
+    IDC_COMBO_COMPORT, 0x403, 5, 0
+0x4f43, 0x324d, "\000" 
+    IDC_COMBO_COMPORT, 0x403, 5, 0
+0x4f43, 0x334d, "\000" 
+    IDC_COMBO_COMPORT, 0x403, 5, 0
+0x4f43, 0x344d, "\000" 
+    IDC_COMBO_COMPORT, 0x403, 5, 0
+0x4f43, 0x354d, "\000" 
+    IDC_COMBO_COMPORT, 0x403, 5, 0
+0x4f43, 0x364d, "\000" 
+    IDC_COMBO_COMPORT, 0x403, 5, 0
+0x4f43, 0x374d, "\000" 
+    IDC_COMBO_COMPORT, 0x403, 5, 0
+0x4f43, 0x384d, "\000" 
+    IDC_COMBO_COMPORT, 0x403, 5, 0
+0x4f43, 0x394d, "\000" 
+    IDC_COMBO_COMPORT, 0x403, 6, 0
+0x4f43, 0x314d, 0x0030, 
+    IDC_COMBO_COMPORT, 0x403, 6, 0
+0x4f43, 0x314d, 0x0031, 
+    IDC_COMBO_COMPORT, 0x403, 6, 0
+0x4f43, 0x314d, 0x0032, 
+    IDC_COMBO_COMPORT, 0x403, 6, 0
+0x4f43, 0x314d, 0x0033, 
+    IDC_COMBO_COMPORT, 0x403, 6, 0
+0x4f43, 0x314d, 0x0034, 
+    IDC_COMBO_COMPORT, 0x403, 6, 0
+0x4f43, 0x314d, 0x0035, 
+    IDC_COMBO_COMPORT, 0x403, 6, 0
+0x4f43, 0x314d, 0x0036, 
+    IDC_COMBO_COMPORT2, 0x403, 5, 0
+0x3639, 0x3030, "\000" 
+    IDC_COMBO_COMPORT2, 0x403, 6, 0
+0x3931, 0x3032, 0x0030, 
+    IDC_COMBO_COMPORT2, 0x403, 6, 0
+0x3833, 0x3034, 0x0030, 
+    IDC_COMBO_COMPORT2, 0x403, 6, 0
+0x3735, 0x3036, 0x0030, 
+    IDC_COMBO_COMPORT2, 0x403, 7, 0
+0x3131, 0x3235, 0x3030, "\000" 
+    IDC_COMBO_COMPORT3, 0x403, 2, 0
+0x0035, 
+    IDC_COMBO_COMPORT3, 0x403, 2, 0
+0x0036, 
+    IDC_COMBO_COMPORT3, 0x403, 2, 0
+0x0037, 
+    IDC_COMBO_COMPORT3, 0x403, 2, 0
+0x0038, 
+    IDC_COMBO_COMPORT4, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO_COMPORT4, 0x403, 2, 0
+0x0032, 
+    IDC_COMBO_COMPORTSET, 0x403, 2, 0
+0x0030, 
+    IDC_COMBO_COMPORTSET, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO_COMBAUDSET, 0x403, 5, 0
+0x3639, 0x3030, "\000" 
+    IDC_COMBO_COMBAUDSET, 0x403, 6, 0
+0x3931, 0x3032, 0x0030, 
+    IDC_COMBO_COMBAUDSET, 0x403, 6, 0
+0x3833, 0x3034, 0x0030, 
+    IDC_COMBO_COMBAUDSET, 0x403, 6, 0
+0x3735, 0x3036, 0x0030, 
+    IDC_COMBO_COMBAUDSET, 0x403, 7, 0
+0x3131, 0x3235, 0x3030, "\000" 
+    IDC_COMBO_COMCTRL, 0x403, 2, 0
+0x0030, 
+    IDC_COMBO_COMCTRL, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO_COMCHANNEL, 0x403, 3, 0
+0x3131, "\000" 
+    IDC_COMBO_COMCHANNEL, 0x403, 3, 0
+0x3231, "\000" 
+    IDC_COMBO_COMCHANNEL, 0x403, 3, 0
+0x3331, "\000" 
+    IDC_COMBO_COMCHANNEL, 0x403, 3, 0
+0x3431, "\000" 
+    IDC_COMBO_COMCHANNEL, 0x403, 3, 0
+0x3531, "\000" 
+    IDC_COMBO_COMCHANNEL, 0x403, 3, 0
+0x3631, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 ZBSCOMM(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\ZBSCOMM.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
